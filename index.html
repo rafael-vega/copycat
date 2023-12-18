@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Google Translate</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="Language" content="English">
+    <link rel="stylesheet" href="style.css">
+    <script src="myScript.js"></script>
+</head>
+<body>
+    <header>
+        <div class="dropdown">
+            <button class="dropbtn"><b class="links1">≡</b></button>
+                <div class="dropdown-content">
+                    <img style="height: 20px;padding: 12px 16px;" src="googletranslate.png" alt="Google Tranlate Logo Dropdown">
+                    <a href="#">Om Google Översätt</a>
+                    <a href="#">Integritet och villkor</a>
+                    <a href="#">Hjälp</a>
+                    <a href="#">Skicka feedback</a>
+                    <a href="#">Om Google</a>
+                </div>
+          </div>
+          <a href="#"><img class="logo" src="googletranslate.png" alt="Google Translate Logo"></a>
+          <div class="dropdown2">
+            <button class="dropbtn2"><img class="settings" src="settings.png" alt="Settings"></button>
+            <div class="dropdown-content2">
+              <p style="font-size: 20px;">Inställningar</p>
+              <p style="font-size: 16px;">Talhastighet</p>
+              <input type="radio" id="normal" name="tal-hastighet">
+              <label for="normal">Normal</label><br>
+              <input type="radio" id="låg" name="tal-hastighet">
+              <label for="låg">Låg</label><br>
+              <input type="radio" id="lägre" name="tal-hastighet">
+              <label for="lägre">Lägre</label>
+            </div>
+          </div>
+          <div class="dropdown3">
+            <button class="dropbtn3"><img class="dots-icon" src="dots-icon.png" alt="Dots-Icon"></button>
+            <div class="dropdown-content3">
+              <a href="https://docs.google.com/document/u/0/?tgif=d"><img class="docs" src="docs.png"><p>Docs</p></a>
+              <a href="https://docs.google.com/presentation/u/0/?tgif=d"><img class="slides" src="slides.png"><p>Slides</p></a>
+              <a href="https://drive.google.com/drive/home"><img class="drive" src="drive.png"><p>Drive</p></a>
+            </div>
+          </div>
+          <a href="#" class="login">Logga In</a>
+    </header>
+    <main>
+      <div class="knapp-box">
+        <div class="text-knapp">
+          <a href="index.html">Text</a>
+        </div>
+        <div class="bilder-knapp">
+          <a href="#">Bilder</a>
+        </div>
+        <div class="dokument-knapp">
+          <a href="#">Dokument</a>
+        </div>
+        <div class="webbplats-knapp">
+          <a href="#">Webbplatser</a>
+        </div>
+      </div>
+      <div class="translate">
+        <div class="language-selectors">
+        <div class="root-language-select">
+          <input type="radio" id="Detect-language" name="RLS">
+          <label for="Detect-language">Detect Language</label><br>
+          <input type="radio" id="Svenska" name="RLS">
+          <label for="Svenska">Svenska</label><br>
+          <input type="radio" id="English" name="RLS">
+          <label for="English">Enlgish</label>
+        </div>
+        <div class="destination-language-select">
+          <input type="radio" id="English2" name="DLS" onclick="document.getElementById('text2').placeholder='Translation...'">
+          <label for="English2">English</label><br>
+          <input type="radio" id="Svenska2" name="DLS" onclick="document.getElementById('text2').placeholder='Översättning...'">
+          <label for="Svenska2">Svenska</label><br>
+        </div>
+        </div>
+        <div class="text-box">
+            <textarea type="text" id="text1" name="Root Language"></textarea>
+            <textarea type="text" id="text2" name="Destination Language" placeholder=""></textarea> 
+        </div>
+      </div>
+    </main>
+    <div class="add-ons">
+      <a href="#"><img class="history" src="history.png"><p>Historiken</p></a>
+      <a href="#"><img class="favorite" src="favorite.png"><p>Sparad</p></a>
+      <a href="#"><img class="contribute" src="contribute.png"><p>Bidra</p></a>
+    </div>
+</body>
+</html>
